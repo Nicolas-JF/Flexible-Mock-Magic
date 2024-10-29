@@ -77,4 +77,84 @@ footer {
     background-color: #59D9A1;
 }
 
-/* CODE YOUR FLEXBOXES HERE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;                   /* Create a flex container */
+    justify-content: space-between;  /* Space items evenly */
+    align-items: center;             /* Align items vertically */
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.navbar img {
+    max-height: 50px;               /* Adjust image height */
+}
+
+.navbar ul {
+    list-style-type: none;          /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;                  /* Make the list a flex container */
+}
+
+.navbar ul li {
+    margin-left: 20px;              /* Spacing between list items */
+}
+
+.flex-main {
+    display: flex;                  /* Create a flex container for main layout */
+}
+
+.sidebar {
+    width: 200px;                  /* Fixed width for sidebar */
+    display: flex;                 /* Create a flex container */
+    flex-direction: column;        /* Stack items vertically */
+    justify-content: space-around;  /* Even spacing between sidebar items */
+    background: #eaeaea;
+    padding: 20px;
+}
+
+.sidebar-item {
+    padding: 10px;
+}
+
+.main-content {
+    flex: 1;                        /* Allow main content to grow */
+    display: flex;                  /* Create a flex container */
+    flex-wrap: wrap;               /* Allow items to wrap to a new row */
+    padding: 20px;
+}
+
+.image-container {
+    background: #ccc;              /* Background color for image containers */
+    width: 100px;                  /* Fixed width for images */
+    height: 100px;                 /* Fixed height for images */
+    margin: 10px;                  /* Spacing around images */
+    display: flex;                 /* Center text inside */
+    align-items: center;           /* Center items vertically */
+    justify-content: center;       /* Center items horizontally */
+}
+
+footer {
+    display: flex;                 /* Create a flex container */
+    justify-content: space-around; /* Even spacing in footer */
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+.footer-item img {
+    max-width: 100%;              /* Responsive images in footer */
+    height: auto;                 /* Maintain aspect ratio */
+}
